@@ -1,0 +1,1 @@
+当 editorconfig 和 eslint 有冲突时并且都开启了保存自动格式化时，会有冲突，会先保存eslint的配置然后再保存editorconfig的保存

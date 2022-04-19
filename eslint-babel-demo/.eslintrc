@@ -1,0 +1,47 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true,
+		"node": true
+	},
+	"extends": ["standard"],
+	"parser": "@babel/eslint-parser",
+	"parserOptions": {
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"rules": {
+		"comma-dangle": [ "error", "always-multiline" ],
+		"indent": [
+			"error",
+			4
+		],
+		"linebreak-style": [
+			"error",
+			"unix"
+		],
+		"quotes": [
+			"error",
+			"double"
+		],
+		"semi": ["error", "always", { "omitLastInOneLineBlock": true }],
+		"jsdoc/check-param-names": 1,
+		"no-console": 0,
+		// "consistent-return": 0
+		"func-names": 0
+	},
+	"plugins": ["jsdoc"],
+	"globals": {
+		"lintName": "writable"
+	},
+	"settings": {
+		"jsdoc": {
+			"preferredTypes": {
+				"object": "Object" // jsdoc 的类型那里如果是对象会写成 “Object”
+			},
+			"tagNamePreference": {
+				"returns": "return1" // jsdoc return 会变成 “return1”
+			}
+		}
+	}
+}
